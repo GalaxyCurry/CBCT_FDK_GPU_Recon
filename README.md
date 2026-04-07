@@ -1,6 +1,4 @@
-下面是一个为 GitHub 项目编写的 `README.md` 示例。该项目旨在通过 GPU 加速实现 CBCT 三维重建，并帮助学习者掌握重建算法与 CUDA 编程。
 
-```markdown
 # CBCT-Reconstruction-Learn
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -36,20 +34,7 @@
 - C++17 编译器（GCC 8+ / MSVC 2019+）
 - 可选：Python 3.8+（用于测试脚本与可视化）
 
-### 编译步骤
 
-```bash
-git clone https://github.com/yourusername/CBCT-Reconstruction-Learn.git
-cd CBCT-Reconstruction-Learn
-mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make -j$(nproc)
-```
-
-若需生成 Python 绑定（pybind11）：
-```bash
-cmake .. -DBUILD_PYTHON_BINDINGS=ON
-```
 
 ## 🚀 快速开始
 
@@ -61,17 +46,6 @@ cmake .. -DBUILD_PYTHON_BINDINGS=ON
 
 # 使用 SART 迭代重建，设置 20 次迭代
 ./bin/cbct_recon --input proj/ --output sart_result.raw --algorithm sart --iterations 20
-```
-
-### Python 示例
-
-```python
-import cbct_recon as cr
-
-proj = cr.load_projections("data/proj_360.raw", shape=(360, 512, 512))
-geo = cr.Geometry(source_distance=750, detector_distance=400, angles=360)
-recon = cr.reconstruct(proj, geo, algorithm="fdk", gpu=True)
-cr.save_volume(recon, "output.raw")
 ```
 
 ### 测试数据集
@@ -113,16 +87,6 @@ CBCT-Reconstruction-Learn/
 - **[docs/iterative_acceleration.md](docs/iterative_acceleration.md)**：迭代算法加速方法（有序子集、块迭代）。
 - **代码注释**：所有 CUDA kernel 都包含边界条件处理和并行模式分析。
 
-## 🤝 贡献指南
-
-欢迎贡献新算法、优化现有 kernel 或完善文档！
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/awesome-alg`)
-3. 确保 CUDA 代码通过 `cuda-memcheck` 和单元测试
-4. 提交 Pull Request
-
-请遵守 [代码风格](docs/code_style.md)（基于 clang-format）和 [提交消息规范](docs/commit_convention.md)。
 
 ## 📄 许可证
 
@@ -130,12 +94,12 @@ CBCT-Reconstruction-Learn/
 
 ## 🙏 致谢
 
-- 受 [The ASTRA Toolbox](https://www.astra-toolbox.com/) 和 [TIGRE](https://github.com/CERN/TIGRE) 启发
+- 受 [The ASTRA Toolbox](https://www.astra-toolbox.com/) 和 [TIGRE](https://github.com/CERN/TIGRE) 等启发
 - 感谢 NVIDIA CUDA 教学团队提供的示例代码
 
 ## 📬 联系方式
 
-- 项目维护者：Your Name (your.email@example.com)
+- 项目维护者：LiMing Yu (lmy15933285944@163.com)
 - 讨论与问题：请使用 [GitHub Issues](https://github.com/yourusername/CBCT-Reconstruction-Learn/issues)
 
 ---
@@ -143,4 +107,4 @@ CBCT-Reconstruction-Learn/
 **Happy Learning & Coding!** 🚀
 ```
 
-> 💡 **提示**：实际使用时请替换 `yourusername`、邮箱地址以及可能的外部链接。若项目未实现 Python 绑定或某些算法，请相应修改“已实现算法”表格和构建选项。此 README 强调“学习”目的，适合作为课程项目或个人学习仓库的文档模板。
+
