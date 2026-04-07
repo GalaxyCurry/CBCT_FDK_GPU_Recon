@@ -13,7 +13,7 @@ endif()
 
 find_package(OpenCL REQUIRED)
 
-set(HDF5_ROOT D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64)
+set(HDF5_ROOT D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64)
 find_package(HDF5 REQUIRED COMPONENTS CXX)
 
 include_directories(

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\b43659b94c00df262fa335e9e5ebdad8\generate.stamp.rule">
+    <CustomBuild Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\ce9b25d7d73477e1743d70dea35a1c02\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{B04AECC3-5499-3634-A993-1C6CA01F20F7}</UniqueIdentifier>
+      <UniqueIdentifier>{F7693FD3-30C9-3D26-9C94-283A0BD9E0C9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

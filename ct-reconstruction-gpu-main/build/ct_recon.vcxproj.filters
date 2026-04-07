@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\main.cpp">
+    <ClCompile Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\fdk_filter.cpp">
+    <ClCompile Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\fdk_filter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\cpu_reconstruction.cpp">
+    <ClCompile Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\cpu_reconstruction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer.cpp">
+    <ClCompile Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_image.cpp">
+    <ClCompile Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer_full.cpp">
+    <ClCompile Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer_full.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_local.cpp">
+    <ClCompile Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_local.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\mse.cpp">
+    <ClCompile Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\mse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\CMakeLists.txt" />
+    <CustomBuild Include="D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{08600932-020B-39E2-A42C-E17D1612858D}</UniqueIdentifier>
+      <UniqueIdentifier>{CE22FB67-F94A-3DF5-937B-019F1E2F1EE8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

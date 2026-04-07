@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/ct_recon.exe"
+			"path" : "Release/ct_recon.exe"
 		},
 		{
-			"path" : "Debug/ct_recon.pdb"
+			"path" : "Release/ct_recon.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -114,7 +114,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17"
 				},
 				{
 					"backtrace" : 11,
@@ -148,12 +148,12 @@
 				},
 				{
 					"backtrace" : 13,
-					"path" : "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/include"
+					"path" : "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/include"
 				},
 				{
 					"backtrace" : 13,
 					"isSystem" : true,
-					"path" : "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/include"
+					"path" : "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/include"
 				}
 			],
 			"language" : "CXX",
@@ -190,11 +190,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO",
 				"role" : "flags"
 			},
 			{
@@ -208,12 +208,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\base\\hdf5\\HDF5-2.1.1-win64\\lib\\hdf5_cpp.lib",
+				"fragment" : "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\base\\hdf5\\HDF5-2.1.1-win64\\lib\\hdf5_cpp.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 9,
-				"fragment" : "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\base\\hdf5\\HDF5-2.1.1-win64\\lib\\hdf5.lib",
+				"fragment" : "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\base\\hdf5\\HDF5-2.1.1-win64\\lib\\hdf5.lib",
 				"role" : "libraries"
 			},
 			{

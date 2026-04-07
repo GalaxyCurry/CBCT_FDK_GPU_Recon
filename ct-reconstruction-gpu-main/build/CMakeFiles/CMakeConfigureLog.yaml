@@ -134,9 +134,9 @@ events:
       The output was:
       0
       閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.14+a129329f1
-      鐢熸垚鍚姩鏃堕棿涓?2026/4/7 15:42:23銆?
+      鐢熸垚鍚姩鏃堕棿涓?2026/4/7 18:08:12銆?
       
-      鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\4.1.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
+      鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\4.1.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
       PrepareForBuild:
         姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
         宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
@@ -149,7 +149,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\4.1.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\4.1.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -157,13 +157,13 @@ events:
       FinalizeBuildStatus:
         姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濄€?
         姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
-      宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\4.1.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\4.1.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
       
       宸叉垚鍔熺敓鎴愩€?
           0 涓鍛?
           0 涓敊璇?
       
-      宸茬敤鏃堕棿 00:00:00.55
+      宸茬敤鏃堕棿 00:00:00.74
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -171,7 +171,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/4.1.0-rc1/CompilerIdCXX/CompilerIdCXX.exe
+        D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/4.1.0-rc1/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "find-v1"
@@ -1295,8 +1295,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-sy1jhc"
-      binary: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-sy1jhc"
+      source: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-h8hxni"
+      binary: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-h8hxni"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1306,40 +1306,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-sy1jhc'
+        Change Dir: 'D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-h8hxni'
         
-        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_25ebe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b18bc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.14+a129329f1
-        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 15:42:24銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 18:08:13銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy1jhc\\cmTC_25ebe.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h8hxni\\cmTC_b18bc.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_25ebe.dir\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b18bc.dir\\Debug\\鈥濄€?
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy1jhc\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_25ebe.dir\\Debug\\cmTC_25ebe.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h8hxni\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b18bc.dir\\Debug\\cmTC_b18bc.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_25ebe.dir\\Debug\\cmTC_25ebe.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_25ebe.dir\\Debug\\cmTC_25ebe.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_b18bc.dir\\Debug\\cmTC_b18bc.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b18bc.dir\\Debug\\cmTC_b18bc.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_25ebe.dir\\Debug\\\\" /Fd"cmTC_25ebe.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\VSCode\\cmake-4.1.0-rc1-windows-x86_64\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b18bc.dir\\Debug\\\\" /Fd"cmTC_b18bc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\VSCode\\cmake-4.1.0-rc1-windows-x86_64\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35211 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_25ebe.dir\\Debug\\\\" /Fd"cmTC_25ebe.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\VSCode\\cmake-4.1.0-rc1-windows-x86_64\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b18bc.dir\\Debug\\\\" /Fd"cmTC_b18bc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\VSCode\\cmake-4.1.0-rc1-windows-x86_64\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy1jhc\\Debug\\cmTC_25ebe.exe" /INCREMENTAL /ILK:"cmTC_25ebe.dir\\Debug\\cmTC_25ebe.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-sy1jhc/Debug/cmTC_25ebe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-sy1jhc/Debug/cmTC_25ebe.lib" /MACHINE:X64  /machine:x64 cmTC_25ebe.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_25ebe.vcxproj -> D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy1jhc\\Debug\\cmTC_25ebe.exe
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h8hxni\\Debug\\cmTC_b18bc.exe" /INCREMENTAL /ILK:"cmTC_b18bc.dir\\Debug\\cmTC_b18bc.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-h8hxni/Debug/cmTC_b18bc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-h8hxni/Debug/cmTC_b18bc.lib" /MACHINE:X64  /machine:x64 cmTC_b18bc.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b18bc.vcxproj -> D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h8hxni\\Debug\\cmTC_b18bc.exe
         FinalizeBuildStatus:
-          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_25ebe.dir\\Debug\\cmTC_25ebe.tlog\\unsuccessfulbuild鈥濄€?
-          姝ｅ湪瀵光€渃mTC_25ebe.dir\\Debug\\cmTC_25ebe.tlog\\cmTC_25ebe.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sy1jhc\\cmTC_25ebe.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_b18bc.dir\\Debug\\cmTC_b18bc.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b18bc.dir\\Debug\\cmTC_b18bc.tlog\\cmTC_b18bc.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h8hxni\\cmTC_b18bc.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
         宸叉垚鍔熺敓鎴愩€?
             0 涓鍛?
             0 涓敊璇?
         
-        宸茬敤鏃堕棿 00:00:00.52
+        宸茬敤鏃堕棿 00:00:00.55
         
       exitCode: 0
   -
@@ -2082,8 +2082,8 @@ events:
     checks:
       - "Looking for CL_VERSION_3_0"
     directories:
-      source: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-fz71w6"
-      binary: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-fz71w6"
+      source: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-k7v3xd"
+      binary: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-k7v3xd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -2092,35 +2092,35 @@ events:
       variable: "OPENCL_VERSION_3_0"
       cached: true
       stdout: |
-        Change Dir: 'D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-fz71w6'
+        Change Dir: 'D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-k7v3xd'
         
-        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6021e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_be673.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.14+a129329f1
-        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 15:42:25銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 18:08:14銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fz71w6\\cmTC_6021e.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k7v3xd\\cmTC_be673.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_6021e.dir\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_be673.dir\\Debug\\鈥濄€?
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fz71w6\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_6021e.dir\\Debug\\cmTC_6021e.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k7v3xd\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_be673.dir\\Debug\\cmTC_be673.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_6021e.dir\\Debug\\cmTC_6021e.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_6021e.dir\\Debug\\cmTC_6021e.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_be673.dir\\Debug\\cmTC_be673.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_be673.dir\\Debug\\cmTC_be673.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_6021e.dir\\Debug\\\\" /Fd"cmTC_6021e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fz71w6\\CheckSymbolExists.cxx"
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_be673.dir\\Debug\\\\" /Fd"cmTC_be673.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k7v3xd\\CheckSymbolExists.cxx"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35211 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_6021e.dir\\Debug\\\\" /Fd"cmTC_6021e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fz71w6\\CheckSymbolExists.cxx"
+          cl /c /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_be673.dir\\Debug\\\\" /Fd"cmTC_be673.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k7v3xd\\CheckSymbolExists.cxx"
           CheckSymbolExists.cxx
           cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 300 (OpenCL 3.0)
         Link:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fz71w6\\Debug\\cmTC_6021e.exe" /INCREMENTAL /ILK:"cmTC_6021e.dir\\Debug\\cmTC_6021e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-fz71w6/Debug/cmTC_6021e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-fz71w6/Debug/cmTC_6021e.lib" /MACHINE:X64  /machine:x64 cmTC_6021e.dir\\Debug\\CheckSymbolExists.obj
-          cmTC_6021e.vcxproj -> D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fz71w6\\Debug\\cmTC_6021e.exe
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k7v3xd\\Debug\\cmTC_be673.exe" /INCREMENTAL /ILK:"cmTC_be673.dir\\Debug\\cmTC_be673.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-k7v3xd/Debug/cmTC_be673.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-k7v3xd/Debug/cmTC_be673.lib" /MACHINE:X64  /machine:x64 cmTC_be673.dir\\Debug\\CheckSymbolExists.obj
+          cmTC_be673.vcxproj -> D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k7v3xd\\Debug\\cmTC_be673.exe
         FinalizeBuildStatus:
-          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_6021e.dir\\Debug\\cmTC_6021e.tlog\\unsuccessfulbuild鈥濄€?
-          姝ｅ湪瀵光€渃mTC_6021e.dir\\Debug\\cmTC_6021e.tlog\\cmTC_6021e.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fz71w6\\cmTC_6021e.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_be673.dir\\Debug\\cmTC_be673.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_be673.dir\\Debug\\cmTC_be673.tlog\\cmTC_be673.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k7v3xd\\cmTC_be673.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
         宸叉垚鍔熺敓鎴愩€?
             0 涓鍛?
@@ -3106,46 +3106,46 @@ events:
       - "D:/VSCode/cmake-4.1.0-rc1-windows-x86_64/share/cmake-4.1/Modules/FindHDF5.cmake:677 (find_package)"
       - "CMakeLists.txt:17 (find_package)"
     directories:
-      source: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-2m3s49"
-      binary: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-2m3s49"
+      source: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-tzxwf4"
+      binary: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-tzxwf4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/Modules"
+      CMAKE_MODULE_PATH: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/Modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-2m3s49'
+        Change Dir: 'D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-tzxwf4'
         
-        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f1eb3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f5ac3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.14+a129329f1
-        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 15:42:26銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 18:08:14銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\cmTC_f1eb3.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\cmTC_f5ac3.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_f1eb3.dir\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_f5ac3.dir\\Debug\\鈥濄€?
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_f1eb3.dir\\Debug\\cmTC_f1eb3.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_f5ac3.dir\\Debug\\cmTC_f5ac3.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_f1eb3.dir\\Debug\\cmTC_f1eb3.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_f1eb3.dir\\Debug\\cmTC_f1eb3.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_f5ac3.dir\\Debug\\cmTC_f5ac3.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_f5ac3.dir\\Debug\\cmTC_f5ac3.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_f1eb3.dir\\Debug\\\\" /Fd"cmTC_f1eb3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\src.cxx"
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_f5ac3.dir\\Debug\\\\" /Fd"cmTC_f5ac3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\src.cxx"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35211 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_f1eb3.dir\\Debug\\\\" /Fd"cmTC_f1eb3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\src.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_f5ac3.dir\\Debug\\\\" /Fd"cmTC_f5ac3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\src.cxx"
           src.cxx
-        D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\cmTC_f1eb3.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\cmTC_f1eb3.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\cmTC_f5ac3.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\cmTC_f5ac3.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
         
         鐢熸垚澶辫触銆?
         
-        鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\cmTC_f1eb3.vcxproj鈥?榛樿鐩爣) (1) ->
+        鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\cmTC_f5ac3.vcxproj鈥?榛樿鐩爣) (1) ->
         (ClCompile 鐩爣) -> 
-          D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2m3s49\\cmTC_f1eb3.vcxproj]
+          D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tzxwf4\\cmTC_f5ac3.vcxproj]
         
             0 涓鍛?
             1 涓敊璇?
@@ -3164,48 +3164,48 @@ events:
       - "D:/VSCode/cmake-4.1.0-rc1-windows-x86_64/share/cmake-4.1/Modules/FindHDF5.cmake:677 (find_package)"
       - "CMakeLists.txt:17 (find_package)"
     directories:
-      source: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-jiq4ta"
-      binary: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-jiq4ta"
+      source: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-7wxrac"
+      binary: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-7wxrac"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/Modules"
+      CMAKE_MODULE_PATH: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/Modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-jiq4ta'
+        Change Dir: 'D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-7wxrac'
         
-        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b80ae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6f5df.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.14+a129329f1
-        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 15:42:26銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 18:08:15銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\cmTC_b80ae.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\cmTC_6f5df.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b80ae.dir\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_6f5df.dir\\Debug\\鈥濄€?
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b80ae.dir\\Debug\\cmTC_b80ae.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_6f5df.dir\\Debug\\cmTC_6f5df.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_b80ae.dir\\Debug\\cmTC_b80ae.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_b80ae.dir\\Debug\\cmTC_b80ae.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_6f5df.dir\\Debug\\cmTC_6f5df.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_6f5df.dir\\Debug\\cmTC_6f5df.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_b80ae.dir\\Debug\\\\" /Fd"cmTC_b80ae.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\CheckFunctionExists.cxx"
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_6f5df.dir\\Debug\\\\" /Fd"cmTC_6f5df.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\CheckFunctionExists.cxx"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35211 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_b80ae.dir\\Debug\\\\" /Fd"cmTC_b80ae.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\CheckFunctionExists.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_6f5df.dir\\Debug\\\\" /Fd"cmTC_6f5df.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\Debug\\cmTC_b80ae.exe" /INCREMENTAL /ILK:"cmTC_b80ae.dir\\Debug\\cmTC_b80ae.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-jiq4ta/Debug/cmTC_b80ae.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-jiq4ta/Debug/cmTC_b80ae.lib" /MACHINE:X64  /machine:x64 cmTC_b80ae.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\cmTC_b80ae.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\cmTC_b80ae.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\Debug\\cmTC_6f5df.exe" /INCREMENTAL /ILK:"cmTC_6f5df.dir\\Debug\\cmTC_6f5df.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-7wxrac/Debug/cmTC_6f5df.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-7wxrac/Debug/cmTC_6f5df.lib" /MACHINE:X64  /machine:x64 cmTC_6f5df.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\cmTC_6f5df.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\cmTC_6f5df.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
         
         鐢熸垚澶辫触銆?
         
-        鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\cmTC_b80ae.vcxproj鈥?榛樿鐩爣) (1) ->
+        鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\cmTC_6f5df.vcxproj鈥?榛樿鐩爣) (1) ->
         (Link 鐩爣) -> 
-          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jiq4ta\\cmTC_b80ae.vcxproj]
+          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxrac\\cmTC_6f5df.vcxproj]
         
             0 涓鍛?
             1 涓敊璇?
@@ -3224,53 +3224,53 @@ events:
       - "D:/VSCode/cmake-4.1.0-rc1-windows-x86_64/share/cmake-4.1/Modules/FindHDF5.cmake:677 (find_package)"
       - "CMakeLists.txt:17 (find_package)"
     directories:
-      source: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-eq55zd"
-      binary: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-eq55zd"
+      source: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-f3tjft"
+      binary: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-f3tjft"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/Modules"
+      CMAKE_MODULE_PATH: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/Modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-eq55zd'
+        Change Dir: 'D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-f3tjft'
         
-        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_fc4bb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VSCode/VS/VS2022/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d190b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.14+a129329f1
-        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 15:42:27銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/4/7 18:08:16銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\cmTC_fc4bb.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\cmTC_d190b.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_fc4bb.dir\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_d190b.dir\\Debug\\鈥濄€?
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_fc4bb.dir\\Debug\\cmTC_fc4bb.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_d190b.dir\\Debug\\cmTC_d190b.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_fc4bb.dir\\Debug\\cmTC_fc4bb.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_fc4bb.dir\\Debug\\cmTC_fc4bb.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_d190b.dir\\Debug\\cmTC_d190b.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_d190b.dir\\Debug\\cmTC_d190b.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_fc4bb.dir\\Debug\\\\" /Fd"cmTC_fc4bb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\CheckFunctionExists.cxx"
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_d190b.dir\\Debug\\\\" /Fd"cmTC_d190b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\CheckFunctionExists.cxx"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35211 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_fc4bb.dir\\Debug\\\\" /Fd"cmTC_fc4bb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\CheckFunctionExists.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_d190b.dir\\Debug\\\\" /Fd"cmTC_d190b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\Debug\\cmTC_fc4bb.exe" /INCREMENTAL /ILK:"cmTC_fc4bb.dir\\Debug\\cmTC_fc4bb.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-eq55zd/Debug/cmTC_fc4bb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-eq55zd/Debug/cmTC_fc4bb.lib" /MACHINE:X64  /machine:x64 cmTC_fc4bb.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\cmTC_fc4bb.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\cmTC_fc4bb.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+          D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\Debug\\cmTC_d190b.exe" /INCREMENTAL /ILK:"cmTC_d190b.dir\\Debug\\cmTC_d190b.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-f3tjft/Debug/cmTC_d190b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/CMakeScratch/TryCompile-f3tjft/Debug/cmTC_d190b.lib" /MACHINE:X64  /machine:x64 cmTC_d190b.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\cmTC_d190b.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\cmTC_d190b.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
         
         鐢熸垚澶辫触銆?
         
-        鈥淒:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\cmTC_fc4bb.vcxproj鈥?榛樿鐩爣) (1) ->
+        鈥淒:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\cmTC_d190b.vcxproj鈥?榛樿鐩爣) (1) ->
         (Link 鐩爣) -> 
-          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\tasks\\CT_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq55zd\\cmTC_fc4bb.vcxproj]
+          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\tasks\\CT_Recon\\CBCT_FDK_GPU_Recon\\ct-reconstruction-gpu-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f3tjft\\cmTC_d190b.vcxproj]
         
             0 涓鍛?
             1 涓敊璇?
         
-        宸茬敤鏃堕棿 00:00:00.44
+        宸茬敤鏃堕棿 00:00:00.41
         
       exitCode: 1
   -
@@ -3300,7 +3300,7 @@ events:
       policy_scope: true
       bypass_provider: false
       hints:
-        - "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64"
+        - "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64"
       names:
         - "HDF5"
       path_suffixes:
@@ -3317,27 +3317,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/pkgRedirects/HDF5Config.cmake"
+        path: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/pkgRedirects/HDF5Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/pkgRedirects/hdf5-config.cmake"
+        path: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/pkgRedirects/hdf5-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/HDF5Config.cmake"
+        path: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/HDF5Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/hdf5-config.cmake"
+        path: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/hdf5-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/HDF5Config.cmake"
+        path: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/HDF5Config.cmake"
         mode: "config"
         reason: "no_exist"
     found:
-      path: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/hdf5-config.cmake"
+      path: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/cmake/hdf5-config.cmake"
       mode: "config"
       version: "2.1.1"
     search_context:
@@ -3440,12 +3440,12 @@ events:
     names:
       - "h5diff"
     candidate_directories:
-      - "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/bin/"
-      - "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/Bin/"
-      - "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/"
+      - "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/bin/"
+      - "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/Bin/"
+      - "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/"
     searched_directories:
-      - "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/bin/h5diff.com"
-    found: "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/bin/h5diff.exe"
+      - "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/bin/h5diff.com"
+    found: "D:/tasks/CT_Recon/CBCT_FDK_GPU_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/bin/h5diff.exe"
     search_context:
       ENV{PATH}:
         - "D:\\VSCode\\VS\\VS2022\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"

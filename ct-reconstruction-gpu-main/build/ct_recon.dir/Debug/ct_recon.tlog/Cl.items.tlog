@@ -1,8 +1,8 @@
-D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\main.cpp;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\main.obj
-D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\fdk_filter.cpp;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\fdk_filter.obj
-D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\cpu_reconstruction.cpp;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\cpu_reconstruction.obj
-D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer.cpp;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\gpu_reconstruction_buffer.obj
-D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_image.cpp;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\gpu_reconstruction_image.obj
-D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer_full.cpp;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\gpu_reconstruction_buffer_full.obj
-D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_local.cpp;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\gpu_reconstruction_local.obj
-D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\mse.cpp;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\mse.obj
+D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\main.cpp;D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\main.obj
+D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\fdk_filter.cpp;D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\fdk_filter.obj
+D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\cpu_reconstruction.cpp;D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\cpu_reconstruction.obj
+D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer.cpp;D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\gpu_reconstruction_buffer.obj
+D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_image.cpp;D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\gpu_reconstruction_image.obj
+D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer_full.cpp;D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\gpu_reconstruction_buffer_full.obj
+D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_local.cpp;D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\gpu_reconstruction_local.obj
+D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\src\mse.cpp;D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\ct_recon.dir\Debug\mse.obj

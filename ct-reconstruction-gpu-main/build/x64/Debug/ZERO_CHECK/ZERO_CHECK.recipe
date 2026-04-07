@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>D:\tasks\CT_Recon\CBCT_FDK_GPU_Recon\ct-reconstruction-gpu-main\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
