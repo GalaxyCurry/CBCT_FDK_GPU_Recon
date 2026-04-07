@@ -65,8 +65,7 @@ CBCT-Reconstruction-Learn/
 │   └── io/           # 投影与体数据读写
 ├── examples/         # 命令行工具与演示脚本
 ├── tests/            # 单元测试（Catch2 + CUDA 测试）
-├── docs/             # 算法推导、CUDA 优化笔记
-└── python/           # Python 绑定（pybind11）
+└──  docs/             # 算法推导、CUDA 优化笔记
 ```
 
 ## 🧪 验证与性能
@@ -105,6 +104,4 @@ CBCT-Reconstruction-Learn/
 ---
 
 **Happy Learning & Coding!** 🚀
-```
-
 
