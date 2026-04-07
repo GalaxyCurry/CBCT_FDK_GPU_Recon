@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D29C72A3-59B0-35F8-BFF8-A47D5FB079C8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ct_recon</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ct_recon.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ct_recon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ct_recon.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ct_recon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ct_recon.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ct_recon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ct_recon.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ct_recon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\OpenCL.lib;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\lib\hdf5_cpp.lib;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\lib\hdf5.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/Debug/ct_recon.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/Debug/ct_recon.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\OpenCL.lib;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\lib\hdf5_cpp.lib;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\lib\hdf5.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/Release/ct_recon.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/Release/ct_recon.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\OpenCL.lib;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\lib\hdf5_cpp.lib;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\lib\hdf5.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/MinSizeRel/ct_recon.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/MinSizeRel/ct_recon.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/tasks/CT_Recon/ct-reconstruction-gpu-main/base/hdf5/HDF5-2.1.1-win64/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;H5_BUILT_AS_DYNAMIC_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\include;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\OpenCL.lib;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\lib\hdf5_cpp.lib;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\lib\hdf5.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/RelWithDebInfo/ct_recon.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/RelWithDebInfo/ct_recon.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tasks/CT_Recon/ct-reconstruction-gpu-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\bin\cmake.exe -SD:/tasks/CT_Recon/ct-reconstruction-gpu-main -BD:/tasks/CT_Recon/ct-reconstruction-gpu-main/build --check-stamp-file D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeFindDependencyMacro.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakePushCheckState.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeRCInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckIncludeFileCXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckLibraryExists.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckSymbolExists.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindHDF5.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindOpenCL.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindPackageMessage.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindThreads.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-config-version.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-config.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_java-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_java-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_static-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_static-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\libaec-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\libaec-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\zlib-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\zlib-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeCXXCompiler.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeRCCompiler.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tasks/CT_Recon/ct-reconstruction-gpu-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\bin\cmake.exe -SD:/tasks/CT_Recon/ct-reconstruction-gpu-main -BD:/tasks/CT_Recon/ct-reconstruction-gpu-main/build --check-stamp-file D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeFindDependencyMacro.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakePushCheckState.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeRCInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckIncludeFileCXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckLibraryExists.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckSymbolExists.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindHDF5.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindOpenCL.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindPackageMessage.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindThreads.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-config-version.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-config.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_java-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_java-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_static-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_static-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\libaec-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\libaec-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\zlib-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\zlib-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeCXXCompiler.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeRCCompiler.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tasks/CT_Recon/ct-reconstruction-gpu-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\bin\cmake.exe -SD:/tasks/CT_Recon/ct-reconstruction-gpu-main -BD:/tasks/CT_Recon/ct-reconstruction-gpu-main/build --check-stamp-file D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeFindDependencyMacro.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakePushCheckState.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeRCInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckIncludeFileCXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckLibraryExists.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckSymbolExists.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindHDF5.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindOpenCL.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindPackageMessage.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindThreads.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-config-version.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-config.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_java-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_java-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_static-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_static-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\libaec-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\libaec-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\zlib-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\zlib-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeCXXCompiler.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeRCCompiler.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tasks/CT_Recon/ct-reconstruction-gpu-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\bin\cmake.exe -SD:/tasks/CT_Recon/ct-reconstruction-gpu-main -BD:/tasks/CT_Recon/ct-reconstruction-gpu-main/build --check-stamp-file D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeFindDependencyMacro.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakePushCheckState.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeRCInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckIncludeFileCXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckLibraryExists.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\CheckSymbolExists.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Compiler\MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindHDF5.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindOpenCL.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindPackageMessage.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\FindThreads.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Linker\MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\Windows.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-config-version.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-config.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_java-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_java-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_static-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\hdf5_static-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\libaec-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\libaec-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\zlib-targets-relwithdebinfo.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\base\hdf5\HDF5-2.1.1-win64\cmake\zlib-targets.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeCXXCompiler.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeRCCompiler.cmake;D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\4.1.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\main.cpp" />
+    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\fdk_filter.cpp" />
+    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\cpu_reconstruction.cpp" />
+    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer.cpp" />
+    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_image.cpp" />
+    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_buffer_full.cpp" />
+    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\gpu_reconstruction_local.cpp" />
+    <ClCompile Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\src\mse.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\ZERO_CHECK.vcxproj">
+      <Project>{0F705FEC-E8D2-34DB-B4FA-B58A994B6776}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

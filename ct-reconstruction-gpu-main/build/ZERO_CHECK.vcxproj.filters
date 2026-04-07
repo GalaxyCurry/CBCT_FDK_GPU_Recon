@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\tasks\CT_Recon\ct-reconstruction-gpu-main\build\CMakeFiles\b43659b94c00df262fa335e9e5ebdad8\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B04AECC3-5499-3634-A993-1C6CA01F20F7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

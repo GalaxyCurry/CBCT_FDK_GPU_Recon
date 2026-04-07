@@ -1,0 +1,14 @@
+prefix=D:/a/hdf5/hdf5/install/ci-StdShar-MSVC
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hdf5_hl_cpp
+Description: HDF5 (Hierarchical Data Format 5) Software Library
+Version: 2.1.1
+
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lhdf5_hl_cpp
+Requires: hdf5_cpp = 2.1.1, hdf5_hl = 2.1.1
+Libs.private: 
+Requires.private: hdf5_cpp = 2.1.1, hdf5_hl = 2.1.1

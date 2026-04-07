@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

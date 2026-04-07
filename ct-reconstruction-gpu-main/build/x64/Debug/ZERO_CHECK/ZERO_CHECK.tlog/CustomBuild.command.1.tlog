@@ -1,0 +1,10 @@
+^D:\TASKS\CT_RECON\CT-RECONSTRUCTION-GPU-MAIN\BUILD\CMAKEFILES\B43659B94C00DF262FA335E9E5EBDAD8\GENERATE.STAMP.RULE
+setlocal
+D:\VSCode\cmake-4.1.0-rc1-windows-x86_64\bin\cmake.exe -SD:/tasks/CT_Recon/ct-reconstruction-gpu-main -BD:/tasks/CT_Recon/ct-reconstruction-gpu-main/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/tasks/CT_Recon/ct-reconstruction-gpu-main/build/CT_Reconstruction.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
