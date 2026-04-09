@@ -61,6 +61,9 @@ std::vector<float> reconstructGPU_Buffer_Full(
     cl_platform_id platform;
     checkErr(clGetPlatformIDs(1, &platform, nullptr), "clGetPlatformIDs");
 
+
+
+
     cl_device_id device;
     err = clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, 1, &device, nullptr);
     if (err != CL_SUCCESS) {
@@ -69,12 +72,21 @@ std::vector<float> reconstructGPU_Buffer_Full(
                                 1, &device, nullptr), "clGetDeviceIDs");
     }
 
+
+
+
     cl_context ctx = clCreateContext(nullptr, 1, &device, nullptr, nullptr, &err);
     checkErr(err, "clCreateContext");
+
+
+
 
     cl_command_queue queue = clCreateCommandQueueWithProperties(
         ctx, device, nullptr, &err);
     checkErr(err, "clCreateCommandQueue");
+
+
+
 
     std::string rampSrc = loadSrc("../kernels/ramp_filter_gpu.cl");
     std::string bpSrc   = loadSrc("../kernels/backprojection_buffer.cl");
@@ -93,6 +105,12 @@ std::vector<float> reconstructGPU_Buffer_Full(
     const size_t projSize        = static_cast<size_t>(W) * H;
 
     std::cout << "[GPU-Full] Uploading " << P << " projections to GPU...\n";
+
+
+
+
+
+
 
     cl_mem projBuf = clCreateBuffer(
         ctx,
@@ -122,6 +140,11 @@ std::vector<float> reconstructGPU_Buffer_Full(
     checkErr(clFinish(queue), "clFinish after ramp filter");
 
     std::cout << "[GPU-Full] Ramp filter done. Starting backprojection...\n";
+
+
+
+
+
 
     cl_mem volBuf = clCreateBuffer(ctx, CL_MEM_READ_WRITE,
                                     sizeof(float) * volumeSize,
@@ -171,6 +194,10 @@ std::vector<float> reconstructGPU_Buffer_Full(
         clReleaseMemObject(subProj);
     }
 
+
+
+
+
     std::vector<float> volume(volumeSize);
     checkErr(clEnqueueReadBuffer(queue, volBuf, CL_TRUE,
                                   0, sizeof(float) * volumeSize,
@@ -180,6 +207,10 @@ std::vector<float> reconstructGPU_Buffer_Full(
     float scale = static_cast<float>(M_PI) / P;
     for (auto& v : volume) v *= scale;
 
+
+
+
+    
     // Cleanup
     clReleaseMemObject(projBuf);
     clReleaseMemObject(volBuf);
