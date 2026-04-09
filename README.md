@@ -2,7 +2,7 @@
 # CBCT-Reconstruction-Learn
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![CUDA](https://img.shields.io/badge/CUDA-11.0%2B-green.svg)](https://developer.nvidia.com/cuda-toolkit)
+[![CUDA](https://img.shields.io/badge/CUDA-12.4%2B-green.svg)](https://developer.nvidia.com/cuda-toolkit)
 
 **CBCT-Reconstruction-Learn** 是一个用于锥束计算机断层扫描（CBCT）三维重建的学习型项目。它实现了多种经典与前沿的重建算法，并利用 **GPU（CUDA）** 进行加速，旨在帮助开发者深入理解重建原理、并行计算模式以及 CUDA 编程实践。
 
