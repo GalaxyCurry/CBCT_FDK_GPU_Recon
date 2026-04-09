@@ -12,6 +12,7 @@ from scipy.fft import fft, ifft, next_fast_len
 DATA_PATH   = sys.argv[1] if len(sys.argv) > 1 \
               else "./dataset/proj_shepplogan128.hdf5"
 OUTPUT_HDF5 = "./dataset/reconstructed_volume.hdf5"
+BIN_FILE_PATH = "./viz/vol_python.bin"  
 
 def python_fdk(projections, P, W, H, NX, NY,
                voxelSize, pixelSize, SDD, SOD):
@@ -25,7 +26,7 @@ def python_fdk(projections, P, W, H, NX, NY,
     A, B = np.meshgrid(u_coords, v_coords, indexing='ij')
     cone_w = SDD / np.sqrt(SDD**2 + A**2 + B**2)
     for p in range(P):
-        proj[:,:,p] *= cone_w
+        proj[p,:,:] *= cone_w
 
     padN = 1
     while padN < W:
@@ -49,10 +50,10 @@ def python_fdk(projections, P, W, H, NX, NY,
     row_pad = np.zeros(padN)
     for p in range(P):
         for v in range(H):
-            row_pad[:W] = proj[v, :, p]
+            row_pad[:W] = proj[p, :, v]
             row_pad[W:] = 0.0
             filtered = np.real(ifft(fft(row_pad) * F))
-            proj_f[v, :, p] = filtered[:W] / 2.0
+            proj_f[p, :, v] = filtered[:W] / 2.0
 
     volume = np.zeros((NX, NX, NY), dtype=np.float64)
     xs = (np.arange(NX) - (NX-1)/2) * voxelSize
@@ -89,8 +90,8 @@ def python_fdk(projections, P, W, H, NX, NY,
                 dv = v_idx[mask] - v0
                 ps = np.where(mask)[0]
 
-                i00 = proj_f[v0, u0, ps]; i10 = proj_f[v0, u1, ps]
-                i01 = proj_f[v1, u0, ps]; i11 = proj_f[v1, u1, ps]
+                i00 = proj_f[ps, u0, v0]; i10 = proj_f[ps, u1, v0]
+                i01 = proj_f[ps, u0, v1]; i11 = proj_f[ps, u1, v1]
                 val = ((i00*(1-du) + i10*du)*(1-dv) +
                        (i01*(1-du) + i11*du)*dv)
 
@@ -110,15 +111,15 @@ def value_range(name, vol):
 
 print(f"Loading dataset: {DATA_PATH}")
 with h5py.File(DATA_PATH, 'r') as f:
-    P         = int(f['num_projs'][()])
-    W         = int(f['detector_width'][()])
-    H         = int(f['detector_height'][()])
-    NX        = int(f['Volumen_num_xz'][()])
-    NY        = int(f['Volumen_num_y'][()])
-    voxelSize = float(f['voxelSize'][()])
-    pixelSize = float(f['pixelSize'][()])
-    SDD       = float(f['SDD'][()])
-    SOD       = float(f['SOD'][()])
+    P         = int(f['num_projs'][()].item())
+    W         = int(f['detector_width'][()].item())
+    H         = int(f['detector_height'][()].item())
+    NX        = int(f['Volumen_num_xz'][()].item())
+    NY        = int(f['Volumen_num_y'][()].item())
+    voxelSize = float(f['voxelSize'][()].item())
+    pixelSize = float(f['pixelSize'][()].item())
+    SDD       = float(f['SDD'][()].item())
+    SOD       = float(f['SOD'][()].item())
     proj_raw  = f['Projection'][:]
 
 print(f"  Projections: {P}  |  Detector: {W}x{H}  |  Volume: {NX}x{NX}x{NY}")
@@ -137,6 +138,9 @@ print("\nRunning Python FDK reference (15-20 min)...")
 vol_python = python_fdk(proj_raw, P, W, H, NX, NY,
                         voxelSize, pixelSize, SDD, SOD)
 print("Python reference done.\n")
+vol_python.tofile(BIN_FILE_PATH)
+print(f"Saved Python reference volume to: {BIN_FILE_PATH}\n")
+
 
 print("══════════════════ Validation ══════════════════")
 print("\n[Step 1] Python reference vs C++ CPU:")
@@ -160,22 +164,24 @@ mid = NX // 2
 vmin = vol_cpu[:,:,mid].min()
 vmax = vol_cpu[:,:,mid].max()
 
-# Figure 1: all 6 reconstructions
+########################################## Figure 1: all 6 reconstructions ##########################################
 fig, axes = plt.subplots(2, 3, figsize=(15, 10))
 items = [("Python Reference", vol_python), ("C++ CPU", vol_cpu),
          ("GPU Buffer", vol_buf), ("GPU Image", vol_img),
          ("GPU Full", vol_full), ("GPU Local", vol_local)]
+
 for ax, (title, vol) in zip(axes.flat, items):
-    im = ax.imshow(vol[:, mid, :], cmap='gray', vmin=vmin, vmax=vmax)
+    im = ax.imshow(vol[:, :, mid], cmap='gray', vmin=vmin, vmax=vmax)
     ax.set_title(title, fontsize=11); ax.axis('off')
     plt.colorbar(im, ax=ax, fraction=0.046)
+    
 plt.suptitle(f'FDK Reconstruction — Middle Slice (z={mid})\n'
              f'Dataset: {DATA_PATH.split("/")[-1]}', fontsize=13)
 plt.tight_layout()
 plt.savefig('./viz/reconstruction_all.png', dpi=150, bbox_inches='tight')
 print("\nSaved: reconstruction_all.png")
 
-# Figure 2: CPU vs GPU difference maps
+########################################## Figure 2: CPU vs GPU difference maps #########################################
 fig2, axes2 = plt.subplots(1, 4, figsize=(18, 5))
 for ax, (title, vol) in zip(axes2, [("CPU - GPU Buffer", vol_buf),
     ("CPU - GPU Image", vol_img), ("CPU - GPU Full", vol_full),
@@ -185,12 +191,13 @@ for ax, (title, vol) in zip(axes2, [("CPU - GPU Buffer", vol_buf),
     im = ax.imshow(diff, cmap='seismic', vmin=-vm, vmax=vm)
     ax.set_title(title, fontsize=10); ax.axis('off')
     plt.colorbar(im, ax=ax, fraction=0.046)
+    
 plt.suptitle('Difference Maps: C++ CPU vs GPU Pipelines', fontsize=12)
 plt.tight_layout()
 plt.savefig('./viz/reconstruction_diff.png', dpi=150, bbox_inches='tight')
 print("Saved: reconstruction_diff.png")
 
-# Figure 3: Python vs CPU
+########################################## Figure 3: Python vs CPU ##########################################
 fig3, axes3 = plt.subplots(1, 3, figsize=(15, 5))
 for ax, sl in zip(axes3, [NX//4, NX//2, 3*NX//4]):
     diff = vol_python[:,:,sl] - vol_cpu[:,:,sl]
@@ -198,6 +205,7 @@ for ax, sl in zip(axes3, [NX//4, NX//2, 3*NX//4]):
     im = ax.imshow(diff, cmap='seismic', vmin=-vm, vmax=vm)
     ax.set_title(f'Python − CPU  (slice z={sl})', fontsize=10)
     ax.axis('off'); plt.colorbar(im, ax=ax, fraction=0.046)
+    
 plt.suptitle(f'Python Reference vs C++ CPU  |  MSE = {mse_py_cpu:.2e}', fontsize=12)
 plt.tight_layout()
 plt.savefig('./viz/python_vs_cpu.png', dpi=150, bbox_inches='tight')
