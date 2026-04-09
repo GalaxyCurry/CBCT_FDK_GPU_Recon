@@ -15,7 +15,7 @@
 - 🧩 **模块化设计**：算法基类、投影几何、探测器模型、加速器抽象层便于扩展和教学。
 - 📊 **可视化与评估**：内置重建切片查看器、均方误差（MSE）、峰值信噪比（PSNR）评估工具。
 - 📖 **教育优先**：代码中附有详细注释，并包含算法推导文档和 CUDA 优化技巧说明。
-- 🔧 **跨平台支持**：Linux / Windows（通过 CMake + MSVC）测试通过。
+- 🔧 **平台支持**：Windows（通过 CMake + MSVC）测试通过。
 
 ## 🧠 已实现算法
 
@@ -30,8 +30,8 @@
 
 ### 依赖项
 - CMake 3.15+
-- CUDA Toolkit 11.0+（支持 Compute Capability 5.0+）
-- C++17 编译器（GCC 8+ / MSVC 2019+）
+- CUDA Toolkit 12.4+
+- C++17 编译器（MSVC 2022）
 - 可选：Python 3.8+（用于测试脚本与可视化）
 
 
@@ -50,8 +50,8 @@
 
 ### 测试数据集
 
-- 使用 [Shepp-Logan 体模](https://github.com/...) 生成的合成投影（见 `data/generate_synthetic.py`）
-- 公开数据集：[Mayo Clinic CT Data](https://wiki.cancerimagingarchive.net/display/Public/Mayo+Clinic+CT)，需转换为锥束几何
+- 使用 [Shepp-Logan 体模](https://github.com/...) 生成的合成投影（见 `synthetic_data_creator/generate_synthetic.m`）
+- 个人数据集：[Clinic CT Data](https://wiki.cancerimagingarchive.net/display/Public/Mayo+Clinic+CT)，
 
 ## 📂 项目结构
 
@@ -70,10 +70,10 @@ CBCT-Reconstruction-Learn/
 
 ## 🧪 验证与性能
 
-- **正确性**：使用合成投影与解析解对比，FDK 与 SART 重建的峰值信噪比 > 40dB（理想条件）。
+- **正确性**：使用合成投影与解析解对比，FDK 与 SART 重建的峰值信噪比 > xxxdB（理想条件）。
 - **性能**（NVIDIA RTX 3060, 体积 256³，投影 360 张 512×512）：
-  - FDK：< 1.2 秒（GPU） vs 45 秒（单核 CPU）
-  - SART（20 次迭代）：28 秒（GPU） vs 不可行（CPU）
+  - FDK：< xxx 秒（GPU） vs xxx 秒（单核 CPU）
+  - SART（ xxx 次迭代）：xxx 秒（GPU） vs 不可行（CPU）
 
 > 详细的基准测试请参考 [docs/performance.md](docs/performance.md)
 
