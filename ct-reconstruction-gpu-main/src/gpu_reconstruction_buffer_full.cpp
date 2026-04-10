@@ -54,7 +54,8 @@ std::vector<float> reconstructGPU_Buffer_Full(
     int P, int W, int H,
     int NX, int NY,
     float voxelSize, float pixelSize,
-    float sdd, float sod)
+    float sdd, float sod,
+    std::vector<float>& out_filtered_proj_gpu)
 {
     cl_int err;
 
@@ -138,6 +139,15 @@ std::vector<float> reconstructGPU_Buffer_Full(
              "clEnqueueNDRangeKernel ramp");
 
     checkErr(clFinish(queue), "clFinish after ramp filter");
+
+    std::cout << "[GPU-Full] Reading filtered projections back to CPU...\n";
+    out_filtered_proj_gpu.resize(totalProjFloats);
+    checkErr(clEnqueueReadBuffer(
+        queue, projBuf, CL_TRUE,
+        0, sizeof(float) * totalProjFloats,
+        out_filtered_proj_gpu.data(),
+        0, nullptr, nullptr),
+        "Read GPU filtered projections");
 
     std::cout << "[GPU-Full] Ramp filter done. Starting backprojection...\n";
 

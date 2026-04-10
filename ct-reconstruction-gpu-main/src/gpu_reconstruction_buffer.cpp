@@ -34,12 +34,13 @@ std::vector<float> reconstructGPU_Buffer(
     int P, int W, int H,
     int NX, int NY,
     float voxelSize, float pixelSize,
-    float sdd, float sod)
+    float sdd, float sod,
+    std::vector<float>& out_filtered_projections)
 {
     std::cout << "[GPU-Buffer] Applying FDK pre-filter on CPU...\n";
     std::vector<float> projections = applyFDKPreFilter(
         projectionsRaw, P, W, H, voxelSize, sdd, pixelSize);
-
+    out_filtered_projections = projections;
     cl_int err;
 
     cl_platform_id platform;

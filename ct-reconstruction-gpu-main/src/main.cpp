@@ -185,8 +185,9 @@ int main(int argc, char* argv[]){
         }
 
         std::cout<<"[2/5] GPU-Buffer (filter CPU, backproject GPU global memory)...\n";
+        std::vector<float> vol_buf_filtered;
         auto t0=Clock::now();
-        auto volBuf=reconstructGPU_Buffer(projections,P,W,H,NX,NY,voxelSize,pixelSize,SDD,SOD);
+        auto volBuf=reconstructGPU_Buffer(projections,P,W,H,NX,NY,voxelSize,pixelSize,SDD,SOD,vol_buf_filtered);
         double tBuf=elapsed(t0);
         std::cout<<"  Done in "<<tBuf<<" s\n\n";
 
@@ -200,8 +201,9 @@ int main(int argc, char* argv[]){
         std::cout<<"  Done in "<<tImg<<" s\n\n";
 
         std::cout<<"[4/5] GPU-Full (ramp filter + backproject both on GPU)...\n";
+        std::vector<float> vol_full_filtered;
         t0=Clock::now();
-        auto volFull=reconstructGPU_Buffer_Full(projections,P,W,H,NX,NY,voxelSize,pixelSize,SDD,SOD);
+        auto volFull=reconstructGPU_Buffer_Full(projections,P,W,H,NX,NY,voxelSize,pixelSize,SDD,SOD,vol_full_filtered);
         double tFull=elapsed(t0);
         std::cout<<"  Done in "<<tFull<<" s\n\n";
 
@@ -272,8 +274,10 @@ int main(int argc, char* argv[]){
 
             if(!gpuOnly) dumpBin("vol_cpu.bin",   volCPU);
             dumpBin("vol_buf.bin",   volBuf);
+            dumpBin("vol_buf_filtered.bin", vol_buf_filtered);
             dumpBin("vol_img.bin",   volImg);
             dumpBin("vol_full.bin",  volFull);
+            dumpBin("vol_full_filtered.bin", vol_full_filtered);
             dumpBin("vol_local.bin", volLocal);
         }
         std::cout<<"  Run: python3 pack_hdf5.py\n\n";

@@ -18,7 +18,7 @@ std::vector<float> reconstructCPU(
 std::vector<float> reconstructGPU_Buffer(
     const std::vector<float>& projections,
     int P, int W, int H, int NX, int NY,
-    float voxelSize, float pixelSize, float sdd, float sod);
+    float voxelSize, float pixelSize, float sdd, float sod, std::vector<float>& out_filtered_projections);
 
 // GPU backprojection using OpenCL image textures.
 std::vector<float> reconstructGPU_Image(
@@ -30,7 +30,7 @@ std::vector<float> reconstructGPU_Image(
 std::vector<float> reconstructGPU_Buffer_Full(
     const std::vector<float>& projections,
     int P, int W, int H, int NX, int NY,
-    float voxelSize, float pixelSize, float sdd, float sod);
+    float voxelSize, float pixelSize, float sdd, float sod, std::vector<float>& out_filtered_proj_gpu);
 
 // GPU backprojection using local-memory tiling.
 std::vector<float> reconstructGPU_Local(

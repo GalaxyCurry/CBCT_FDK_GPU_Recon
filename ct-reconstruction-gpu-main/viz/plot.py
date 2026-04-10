@@ -78,7 +78,7 @@ def main():
     parser.add_argument('-f', '--file', type=str, default="./viz/vol_full.bin", help="binary volume file path")
     parser.add_argument('-s', '--shape', type=int, nargs=3, default=[128, 128, 128], help="data shape (X Y Z)")
     parser.add_argument('-d', '--dtype', type=str, default='float32', help="data type (string form, e.g., 'float32')")
-    parser.add_argument('-a', '--axis', type=int, default=0, help="slice axis (0=X, 1=Y, 2=Z)")
+    parser.add_argument('-a', '--axis', type=int, default=2, help="slice axis (0=X, 1=Y, 2=Z)")
     parser.add_argument('-i', '--index', type=int, default=64, help="starting slice index")
     parser.add_argument('-n', '--num', type=int, default=10, help="number of slices to display")
     parser.add_argument('-o', '--output', type=str, default="./viz/slice_plot.png", help="output image path")
